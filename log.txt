@@ -1,0 +1,5 @@
+warn:    --minUptime not set. Defaulting to: 1000ms
+warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+Iniciando... 
+Servidor inicado en 127.0.0.1:8080
+Gestor: Conexión exitosa

@@ -1,0 +1,61 @@
+<!DOCTYPE html> <html>
+    <head>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="...">
+        <meta name="author" content="...">
+        <meta charset="UTF-8">
+        <meta  name="theme-color" content="#006fa7">
+
+        <!--MaterialGoogle-->
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" href="stylesheets/base.css">
+
+        <script language="javascript" type="text/javascript" src="javascripts/utilidades.js"></script>
+        <script language="javascript" type="text/javascript" src="javascripts/socket.io.js"></script>
+        <script language="javascript" type="text/javascript" src="javascripts/p5.js"></script>
+        <script language="javascript" type="text/javascript" src="javascripts/jquery-2.1.4.min.js"></script>
+        <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
+        <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+
+        <!-- inicio el socket y escucho las pavadas -->
+        <script language="javascript" type="text/javascript" src="javascripts/initSocket.js"></script>
+        
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8" style="width: 480px; height: 400px;" id="graf-holder"></div>
+                <div class="col-lg-4 col-md-4 "id="infocards"></div>
+            </div>
+            <div class="row" id="acciones">
+                <div class="col-lg-3 col-md-3 checkbox switch">
+                    <label for="bomba">
+                        <input class="access-hide" id="bomba" name="bomba" type="checkbox"><span class="switch-toggle"></span>Bomba
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 checkbox switch">
+                    <label for="ventilar">
+                        <input class="access-hide" id="ventilar" name="ventilar" type="checkbox"><span class="switch-toggle"></span>Ventilar
+                    </label>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+<script src="javascripts/plotly-latest.min.js"></script>
+<script type="text/javascript" src="javascripts/home.js"></script>
+<script language="javascript" type="text/javascript" src="javascripts/graficaTemp.js"></script>
+<script type="text/javascript">
+ 	var url_tcp=<%- JSON.stringify(url_tcp) %>;
+	init_addr(url_tcp);  
+
+</script>
+    
